@@ -6,7 +6,7 @@
 #    By: aceauses <aceauses@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/04/17 09:47:04 by aceauses          #+#    #+#              #
-#    Updated: 2023/04/24 14:25:35 by aceauses         ###   ########.fr        #
+#    Updated: 2023/05/08 16:30:05 by aceauses         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -23,12 +23,9 @@ SRC= ft_printf.c \
 	 ft_putnmbr.c \
 	 ft_putnmbr_un.c \
 
-LIBFT= ./libft/libft.a
-
 OBJS=$(SRC:.c=.o)
 
-$(NAME):  $(LIBFT) $(OBJS)
-	cp $(LIBFT) $(NAME)
+$(NAME): $(OBJS)
 	$(AR) $(NAME) $(OBJS)
 
 $(OBJS):
@@ -37,16 +34,11 @@ $(OBJS):
 all: $(NAME)
 	echo "Printf Library Compiled"
 
-$(LIBFT):
-	make -C ./libft all
-
 clean:
-	cd libft/ && make clean
 	rm -f $(OBJS)
 	echo "Printf: Objects Deleted"
 
 fclean: clean
-	cd libft/ && make fclean
 	rm -f $(NAME)
 	echo "Printf: Everything Deleted"
 

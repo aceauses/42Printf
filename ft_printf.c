@@ -6,12 +6,11 @@
 /*   By: aceauses <aceauses@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/17 09:47:11 by aceauses          #+#    #+#             */
-/*   Updated: 2023/04/24 14:34:44 by aceauses         ###   ########.fr       */
+/*   Updated: 2023/05/08 16:30:51 by aceauses         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
-#include "libft/libft.h"
 
 static int	printf_symbol(va_list args, int c)
 {
