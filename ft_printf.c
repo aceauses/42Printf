@@ -21,7 +21,7 @@ static int	printf_symbol(va_list args, int c)
 		print += ft_putchar(va_arg(args, int));
 	else if (c == 's')
 		print += ft_putstr(va_arg(args, char *));
-	else if (c == 'd' | c == 'i')
+	else if (c == 'd' || c == 'i')
 		print += ft_putnmbr(va_arg(args, int));
 	else if (c == 'u')
 		print += ft_putnmbr_un(va_arg(args, unsigned int));
