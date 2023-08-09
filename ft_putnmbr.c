@@ -44,6 +44,6 @@ int	ft_putnmbr(long int n)
 	}
 	else
 		write (1, &base[n], 1);
-	nmbr_len += ft_long_base_len(n, ft_strlen_mod(base));
+	nmbr_len += ft_long_base_len(n, ft_strlen_printf(base));
 	return (nmbr_len);
 }
