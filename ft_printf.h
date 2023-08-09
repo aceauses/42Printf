@@ -21,7 +21,7 @@ int		ft_printf(const char *str, ...);
 
 int		ft_putchar(char c);
 int		ft_putstr(char *c);
-size_t	ft_strlen_mod(const char *str);
+size_t	ft_strlen_printf(const char *str);
 
 int		ft_put_ptr(void *p);
 int		ft_print_hex(unsigned int num, int format);
